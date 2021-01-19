@@ -1,0 +1,97 @@
+doctype
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="main.css")
+    body
+        .datatable-container
+
+            .header-tools
+
+                .tools
+                    ul
+                        li: span: input(type='checkbox')
+                        li: button: i.material-icons add_circle
+                        li: button: i.material-icons edit
+                        li: button: i.material-icons delete
+                        li: button: i.material-icons share
+                .search
+                    input.search-input(type="text")
+
+            table.datatable
+
+                thead
+                    tr
+                        th
+                        th Status
+                        th Name
+                        th Position
+                        th Office
+                        th Age
+                        th Date
+                tbody
+                    tr
+                        td.table-checkbox: input(type='checkbox')
+                        td: span.available
+                        td Marcos Rivas
+                        td CEO
+                        td San Francisco
+                        td 28
+                        td 2020/05/01
+                    tr
+                        td.table-checkbox: input(type='checkbox')
+                        td: span.away
+                        td Lena Sanchez
+                        td CEO
+                        td Florida
+                        td 29
+                        td 2020/07/01
+                    tr
+                        td.table-checkbox: input(type='checkbox')
+                        td: span.away
+                        td Juan Perez 
+                        td CMO
+                        td Mexico
+                        td 25
+                        td 2019/05/01
+                    tr
+                        td.table-checkbox: input(type='checkbox')
+                        td: span.away
+                        td Alma Mater 
+                        td Ti Subdirector
+                        td Seattle
+                        td 28
+                        td 2020/05/01
+                    tr
+                        td.table-checkbox: input(type='checkbox')
+                        td: span.offline
+                        td Catalina Creel
+                        td HR Director
+                        td Sevilla
+                        td 42
+                        td 2020/12/01
+            
+            .footer-tools
+
+                class.list-items Show
+                    select#n-entries.n-entries(name='n-entries')
+                        option(value='15') 5
+                        option(value='10' selected) 10
+                        option(value='15') 15
+                    | entries
+
+                .pages  
+                        ul 
+                            li: span.active 1
+                            li: button 2
+                            li: button 3
+                            li: button 4
+                            li: span ...
+                            li: button 9
+                            li: button 10
+
+            
